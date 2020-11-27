@@ -2,7 +2,16 @@
   position: fixed;
   width: 100%;
   background-color: #fff;
+  padding: 15px 0;
   z-index: 20;
+}
+.clearfix {
+  content: "";
+  clear: both;
+  display: block;
+}
+img {
+  vertical-align: bottom;
 }
 body {
   font-family: "Lato";
@@ -16,11 +25,9 @@ body {
   margin: 0 auto;
 }
 .fa-bolt {
-  padding: 15px 0;
   float: left;
 }
 .header_button {
-  display: inline-block;
   background-color: #74cfae;
   font-size: 12px;
   padding: 14px 12px;
@@ -34,8 +41,10 @@ body {
 .theme {
   background-color: #f2f2f2;
   width: 100%;
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding: 250px 0;
+}
+.theme_inner {
+  margin-top: 70px;
 }
 .theme_title {
   color: #74cfae;
@@ -44,7 +53,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 .theme_subtitle {
   font-size: 30px;
@@ -52,27 +60,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .section {
   background-color: #74cfae;
   width: 100%;
   padding-top: 50px;
+  overflow: hidden;
 }
-.section_body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.section_img {
+  float: left;
+  margin-left: 100px;
+}
+.section_right {
+  width: 680px;
+  float: right;
+  padding-top: 30px;
 }
 .section_title {
   text-align: center;
   font-size: 24px;
   color: #fff;
-  width: 680px;
-  margin-left: 220px;
 }
 .section_text {
   font-size: 20px;
   margin-top: 35px;
+  text-align: center;
+  color: #fff;
 }
 .article {
   background-color: #f2f2f2;
@@ -84,36 +98,36 @@ body {
   font-size: 24px;
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
 }
 .article_main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 90px;
+  margin-top: 40px;
 }
 .article_img:hover {
-  transition: all 0.3s;
   opacity: 1.0;
 }
 .article_img:nth-child(-n+3){
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 .article_img {
-  padding-left: 100px;
+  margin-left: 100px;
   opacity: 0.7;
   z-index: 10;
+  cursor: pointer;
+  transition-duration: .3s;
 }
 .article_img:nth-child(3n+1) {
-  padding-left: 0;
+  margin-left: 0;
 }
 .article_footer {
   display: flex;
   justify-content: center;
+  margin-top: 90px;
 }
 .article_text {
   font-size: 20px;
-  margin-right: 90px;
   text-align: center;
   width: 567px;
 }
@@ -123,6 +137,7 @@ body {
   padding: 14px 20px;
   color: #fff;
   height: fit-content;
+  margin-left: 90px;
 }
 .article_button:hover {
   transition: all 0.3s;
@@ -140,12 +155,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 70px;
 }
 .skill_main {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 70px;
 }
 .skill_img {
   text-align: center;
@@ -172,9 +187,9 @@ body {
   text-align: center;
   padding: 30px 0;
   cursor: pointer;
+  transition-duration: .3s;
 }
 .nav_icon:hover {
-  transition: all 0.3s;
   background-color: #fff;
 }
 .footer {
