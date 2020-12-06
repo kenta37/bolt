@@ -1,164 +1,195 @@
+.skyblue {
+  background-color: #74cfae;
+}
+
+.white {
+  color: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
+.fullsize {
+  width: 100%;
+}
+
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fff;
   padding: 15px 0;
   z-index: 20;
+  background-color: #fff;
 }
+
 .clearfix::after {
   content: "";
   clear: both;
   display: block;
 }
+
 img {
   vertical-align: bottom;
 }
+
 body {
   font-family: "Lato";
 }
+
 .section_title,
 .article_title {
   font-family: "Raleway";
 }
+
 .inner {
   width: 1100px;
   margin: 0 auto;
 }
+
 .fa-bolt {
   float: left;
 }
-.header_button {
-  background-color: #74cfae;
+
+a {
+  text-decoration: none;
+}
+
+.button {
   font-size: 12px;
-  padding: 14px 12px;
   color: #fff;
-  float: right;
   transition-duration:  .3s;
 }
+
+.header_button {
+  padding: 14px 12px;
+  float: right;
+  background-color: #74cfae;
+}
+
 .header_button:hover {
   color: #333;
 }
+
 .main {
   margin-top: 70px;
   z-index: 10;
 }
+
 .theme {
   background-color: #f2f2f2;
-  width: 100%;
   padding: 250px 0;
 }
+
 .theme_title {
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
+}
+
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .theme_subtitle {
   font-size: 30px;
   color: #c0c0c0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 20px;
 }
+
 .section {
-  background-color: #74cfae;
-  width: 100%;
   padding-top: 50px;
-  overflow: hidden;
 }
+
 .section_img {
   float: left;
   margin-left: 100px;
 }
+
 .section_right {
   width: 680px;
   float: right;
   margin-top: 30px;
 }
+
 .section_title {
-  text-align: center;
   font-size: 24px;
-  color: #fff;
 }
+
 .section_text {
   font-size: 20px;
   margin-top: 35px;
-  text-align: center;
-  color: #fff;
 }
+
 .article {
   background-color: #f2f2f2;
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding: 60px 0 70px;
 }
+
 .article_title {
   font-size: 24px;
-  display: flex;
-  justify-content: center;
 }
+
 .article_main {
   margin-top: 40px;
 }
+
 .article_main_img li {
   float: left;
-  margin-top: 80px;
-  margin-left: 100px;
+  margin: 80px 0 0 100px;
   opacity: 0.7;
   transition-duration: .3s;
 }
+
 .article_main_img li:hover {
   opacity: 1.0;
 }
+
 .article_main_img li:nth-child(-n+3) {
   margin-top: 0;
 }
+
 .article_main_img li:nth-child(3n+1) {
   margin-left: 0;
 }
+
 .article_footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 90px;
 }
+
 .article_text {
-  text-align: center;
   font-size: 20px;
   width: 567px;
 }
+
 .article_button {
-  background-color: #74cfae;
-  font-size: 12px;
   padding: 14px 20px;
-  color: #fff;
   margin-left: 90px;
-  transition-duration: .3s;
+  background-color: #74cfae;
 }
+
 .article_button:hover {
   color: #333;
 }
+
 .skill {
   background-color: #4e4e4e;
   width: 100%;
   padding-top: 70px;
   padding-bottom: 100px;
 }
+
 .skill_title {
   font-size: 24px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
 .skill_main {
-  text-align: center;
   margin-top: 70px;
 }
+
 .skill_main li {
   display: inline-block;
   text-align: center;
@@ -166,21 +197,25 @@ body {
   color: #fff;
   margin-left: 180px;
 }
+
 .skill_main li:first-child {
   margin-left: 0px;
 }
+
 .nav {
   background-color: #f2f2f2;
-  width: 100%;
   padding: 200px 0;
 }
+
 .nav_main {
   text-align: center;
 }
+
 .nav_main {
   width: 740px;
   margin: 0 auto;
 }
+
 .nav_main li a  {
   float: left;
   width: 185px;
@@ -188,16 +223,16 @@ body {
   padding: 30px 0;
   transition-duration: .3s;
 }
+
 .nav_main li a:hover {
   background-color: #fff;
 }
+
 .footer {
-  background-color: #74cfae;
-  width: 100%;
-  overflow: hidden;
   padding-top: 20px;
   padding-bottom: 25px;
 }
+
 .footer_text {
   color: #fff;
   font-size: 20px;
