@@ -158,14 +158,17 @@ a {
 
 .article_footer {
   margin-top: 90px;
+  display: inline-block;
 }
 
 .article_text {
+  float: left;
   font-size: 20px;
   width: 567px;
 }
 
 .article_button {
+  float: right;
   padding: 14px 20px;
   margin-left: 90px;
   background-color: #74cfae;
@@ -199,7 +202,7 @@ a {
 }
 
 .skill_main li:first-child {
-  margin-left: 0px;
+  margin: 0px;
 }
 
 .nav {
@@ -216,15 +219,18 @@ a {
   margin: 0 auto;
 }
 
-.nav_main li a  {
+.nav_main li {
   float: left;
-  width: 185px;
-  color: #74cfae;
   padding: 30px 0;
-  transition-duration: .3s;
+  width: 185px;
+  transition: .3s;
 }
 
-.nav_main li a:hover {
+.nav_main li a {
+  color: #74cfae;
+}
+
+.nav_main li:hover {
   background-color: #fff;
 }
 
@@ -237,4 +243,137 @@ a {
   color: #fff;
   font-size: 20px;
   float: right;
+}
+
+.header nav {
+  position: relative;
+}
+
+.span4 {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  position: absolute;
+  right: 10px;
+  z-index: 1000;
+}
+
+.header span {
+  width: 20px;
+  height: 1px;
+  background-color: #ddd;
+  position: absolute;
+  right: 15px;
+  z-index: 100;
+}
+
+.span1 {
+  top: 10px;
+}
+
+.span2 {
+  top: 17px;
+}
+
+.span3 {
+  top: 24px;
+}
+
+@media screen and (min-width:768px) {
+  .header nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width:1199px) {
+  .inner {
+    width: 97%;
+  }
+
+  .section div {
+    float: none;
+  }
+
+  .section {
+    padding-bottom: 25px;
+  }
+
+  .section_right {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .section_text {
+    margin-top: 35px;
+  }
+
+  .section_img {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .article_main_img li {
+    float: none;
+    margin: 0;
+  }
+  .article_main_img li:nth-child(3n+1) {
+    margin-top: 80px;
+  }
+
+  .article_footer {
+    margin-top: 80px;
+  }
+
+  .article_text,.article_button{
+    float: none;
+  }
+
+  .article_text {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .article_button {
+    margin-left: 0;
+  }
+
+  .skill_main li {
+    margin: 88px 0 0;
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .header a {
+    display: none;
+  }
+
+  .theme {
+    padding: 160px 0 130px;
+  }
+
+  .theme_title {
+    font-size: 80px;
+  }
+
+  .article_main_img img {
+    width: 100%;
+  }
+
+  .nav {
+    padding: 0;
+  } 
+
+  .nav_main {
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .nav_main li {
+    float: none;
+    width: 100%;
+  }
+
 }
