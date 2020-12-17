@@ -38,7 +38,9 @@ body {
 }
 
 .section_title,
-.article_title {
+.article_title,
+.theme_title
+.skill_title {
   font-family: "Raleway";
 }
 
@@ -53,6 +55,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.article_main li a,
+.nav_main a {
+  display: block;
 }
 
 .button {
@@ -105,13 +112,13 @@ a {
 
 .section_img {
   float: left;
-  margin-left: 100px;
+  padding-left: 100px;
 }
 
 .section_right {
   width: 680px;
   float: right;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .section_title {
@@ -137,22 +144,22 @@ a {
   margin-top: 40px;
 }
 
-.article_main_img li {
+.article_main li {
   float: left;
   margin: 80px 0 0 100px;
   opacity: 0.7;
   transition-duration: .3s;
 }
 
-.article_main_img li:hover {
+.article_main li:hover {
   opacity: 1.0;
 }
 
-.article_main_img li:nth-child(-n+3) {
+.article_main li:nth-child(-n+3) {
   margin-top: 0;
 }
 
-.article_main_img li:nth-child(3n+1) {
+.article_main li:nth-child(3n+1) {
   margin-left: 0;
 }
 
@@ -301,6 +308,7 @@ a {
 
   .section_right {
     width: 100%;
+    padding-top: 0;
     margin-top: 20px;
   }
 
@@ -309,15 +317,15 @@ a {
   }
 
   .section_img {
-    margin-left: 0;
+    padding-left: 0;
     text-align: center;
   }
 
-  .article_main_img li {
+  .article_main li {
     float: none;
     margin: 0;
   }
-  .article_main_img li:nth-child(3n+1) {
+  .article_main li:nth-child(3n+1) {
     margin-top: 80px;
   }
 
@@ -358,7 +366,7 @@ a {
     font-size: 80px;
   }
 
-  .article_main_img img {
+  .article_main img {
     width: 100%;
   }
 
