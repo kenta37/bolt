@@ -39,7 +39,7 @@ body {
 
 .section_title,
 .article_title,
-.theme_title
+.theme_title,
 .skill_title {
   font-family: "Raleway";
 }
@@ -57,9 +57,12 @@ a {
   text-decoration: none;
 }
 
-.article_main li a,
 .nav_main a {
   display: block;
+}
+
+.article_main li a {
+  display: inline-block;
 }
 
 .button {
@@ -228,9 +231,12 @@ a {
 
 .nav_main li {
   float: left;
-  padding: 30px 0;
   width: 185px;
   transition: .3s;
+}
+
+.nav_main li a {
+  padding: 30px 0;
 }
 
 .nav_main li a {
@@ -247,9 +253,8 @@ a {
 }
 
 .footer_text {
-  color: #fff;
   font-size: 20px;
-  float: right;
+  text-align: right;
 }
 
 .header nav {
@@ -325,7 +330,7 @@ a {
     float: none;
     margin: 0;
   }
-  .article_main li:nth-child(3n+1) {
+  .article_main li:nth-child(3n+4) {
     margin-top: 80px;
   }
 
